@@ -1,72 +1,80 @@
-# Welcome to your Lovable project
+# Screen Similarizer
 
-## Project info
+**React Website Template**
 
-**URL**: https://lovable.dev/projects/c4f619d9-ea93-45d9-ad45-cff411c4dad5
+![React](https://img.shields.io/badge/React-18-61DAFB?style=flat-square&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.5-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=flat-square&logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![shadcn/ui](https://img.shields.io/badge/shadcn%2Fui-latest-000000?style=flat-square)
+![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
 
-## How can I edit this code?
+A modern React website template built with Vite, TypeScript, and shadcn/ui. Features a responsive layout with hero section, stats dashboard, featured content cards, and a contact form.
 
-There are several ways of editing your application.
+## Features
 
-**Use Lovable**
+- Responsive header with navigation
+- Hero section with call-to-action
+- Animated stats counters
+- Featured content card grid
+- Contact form with validation
+- Dark mode support via `next-themes`
+- Toast notifications (Radix + Sonner)
+- Fully typed with TypeScript
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/c4f619d9-ea93-45d9-ad45-cff411c4dad5) and start prompting.
+## Quick Start
 
-Changes made via Lovable will be committed automatically to this repo.
+```bash
+# Install dependencies
+npm install
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Start development server
 npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+
+# Lint
+npm run lint
 ```
 
-**Edit a file directly in GitHub**
+## Tech Stack
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+| Category | Technology |
+|----------|------------|
+| Framework | React 18 |
+| Language | TypeScript 5.5 |
+| Build Tool | Vite 5 |
+| Styling | Tailwind CSS 3.4 |
+| Components | shadcn/ui (Radix primitives) |
+| Routing | React Router DOM 6 |
+| Data Fetching | TanStack React Query 5 |
+| Forms | React Hook Form + Zod |
 
-**Use GitHub Codespaces**
+## Project Structure
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```
+src/
+  components/
+    Header.tsx           # Navigation header
+    Hero.tsx             # Hero section
+    Stats.tsx            # Stats counters
+    FeaturedCauses.tsx   # Content card grid
+    ContactForm.tsx      # Contact form
+    ui/                  # shadcn/ui components
+  pages/
+    Index.tsx            # Home page
+  hooks/                 # Custom React hooks
+  lib/
+    utils.ts             # Utility functions (cn)
+```
 
-## What technologies are used for this project?
+## License
 
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/c4f619d9-ea93-45d9-ad45-cff411c4dad5) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+MIT
 
 ---
 
