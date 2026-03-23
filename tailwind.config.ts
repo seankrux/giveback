@@ -18,13 +18,19 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ["Inter", "system-ui", "-apple-system", "sans-serif"],
+      },
       colors: {
         foundation: {
-          primary: "#3B82F6",
-          secondary: "#60A5FA",
-          text: "#374151",
-          background: "#FFFFFF",
-          accent: "#EFF6FF",
+          primary: "#D97706",
+          secondary: "#F59E0B",
+          dark: "#92400E",
+          text: "#1C1917",
+          muted: "#78716C",
+          background: "#FFFBEB",
+          accent: "#FEF3C7",
+          surface: "#FAFAF9",
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -69,15 +75,30 @@ export default {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
-        counter: {
+        "fade-up": {
+          "0%": { opacity: "0", transform: "translateY(30px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        "fade-in": {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
+        },
+        "gradient-shift": {
+          "0%, 100%": { backgroundPosition: "0% 50%" },
+          "50%": { backgroundPosition: "100% 50%" },
+        },
+        "float": {
+          "0%, 100%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-10px)" },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        counter: "counter 0.5s ease-out forwards",
+        "fade-up": "fade-up 0.7s ease-out forwards",
+        "fade-in": "fade-in 0.5s ease-out forwards",
+        "gradient-shift": "gradient-shift 8s ease infinite",
+        "float": "float 6s ease-in-out infinite",
       },
     },
   },
